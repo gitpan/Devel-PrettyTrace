@@ -7,7 +7,7 @@ use parent qw(Exporter);
 use Data::Printer;
 use List::MoreUtils qw(all any);
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 our @EXPORT = qw(bt);
 
 our $Indent = '  ';
@@ -26,6 +26,7 @@ our %Opts = (
         expand          => 1,
     },
     max_depth	=> 2,
+    indent		=> 2,
 );
 
 sub bt() {
